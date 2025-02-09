@@ -344,7 +344,7 @@ body {
 
 .flower-pp--4 {
     left: 60%;
-    bottom: 20%;
+    bottom: 15%;
     /* Adjusted position */
     transform-origin: 10% left;
     transform: rotate(15deg);
@@ -359,7 +359,7 @@ body {
 }
 
 .flower-pp--4 .flower_l {
-    height: 60vmin;
+    height: 55vmin;
     /* Increased size */
     background-image: linear-gradient(to top, #142544, #1a9092);
 }
@@ -436,7 +436,7 @@ body {
 }
 
 .flower-pp--6 .flower_l {
-    height: 60vmin;
+    height: 55vmin;
     /* Increased size */
     background-image: linear-gradient(to top, #142544, #1a9092);
 }
