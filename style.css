@@ -39,7 +39,7 @@
     
     .flower {
         position: relative;
-        transform: scale(1.25);
+        transform: scale(1.3);
         /* Scale the entire flower to make it bigger */
     }
     
