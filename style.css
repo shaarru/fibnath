@@ -14,7 +14,7 @@
 
 body {
     background-image: var(--color-bg);
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -27,10 +27,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 6vmin;
-    /* Reduced for smaller screens */
     font-weight: bold;
     color: rgba(255, 255, 255, 0.4);
-    /* Increased opacity for more visibility */
     z-index: -1;
     white-space: nowrap;
     user-select: none;
@@ -41,13 +39,15 @@ body {
 
 .flower {
     position: relative;
+    transform: scale(2);
+    /* Scale the entire flower to make it bigger */
 }
 
 .flower__glass {
-    width: 15vmin;
-    /* Reduced for smaller screens */
-    height: 25vmin;
-    /* Reduced for smaller screens */
+    width: 30vmin;
+    /* Increased size */
+    height: 50vmin;
+    /* Increased size */
     background-image: var(--color-glass);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
     opacity: 0.8;
@@ -61,7 +61,8 @@ body {
     left: 0;
     background-color: #182843;
     width: 100%;
-    height: 2vmin;
+    height: 4vmin;
+    /* Increased size */
 }
 
 .flower__glass::before {
@@ -71,33 +72,36 @@ body {
     left: 0;
     background-image: var(--color-water);
     width: 100%;
-    height: 10vmin;
-    /* Reduced for smaller screens */
+    height: 20vmin;
+    /* Increased size */
 }
 
 .flower-pp {
     position: absolute;
     left: 45%;
-    bottom: 2vmin;
+    bottom: 4vmin;
+    /* Adjusted position */
 }
 
 .flower-pp--2 {
     left: 50%;
-    bottom: 5%;
+    bottom: 10%;
+    /* Adjusted position */
     transform-origin: 10% left;
     transform: rotate(20deg);
 }
 
 .flower-pp--3 {
     left: 30%;
-    bottom: 5%;
+    bottom: 10%;
+    /* Adjusted position */
     transform-origin: 10% left;
     transform: rotate(-10deg);
 }
 
 .flower-pp--3 .flower_l {
-    height: 41vmin;
-    /* Reduced for smaller screens */
+    height: 82vmin;
+    /* Increased size */
     position: relative;
 }
 
@@ -106,14 +110,15 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 4vmin;
-    /* Reduced for smaller screens */
-    height: 4vmin;
-    /* Reduced for smaller screens */
+    width: 8vmin;
+    /* Increased size */
+    height: 8vmin;
+    /* Increased size */
     transform: translate(-69%, -30%) rotate(-5deg);
-    border-radius: 10vmin 10vmin 0 0;
-    border: 1.5vmin solid #104d4e;
-    /* Reduced for smaller screens */
+    border-radius: 20vmin 20vmin 0 0;
+    /* Increased size */
+    border: 3vmin solid #104d4e;
+    /* Increased size */
     border-bottom: transparent;
     border-left: transparent;
 }
@@ -123,14 +128,15 @@ body {
     position: absolute;
     left: -40%;
     top: -1%;
-    width: 4vmin;
-    /* Reduced for smaller screens */
-    height: 1.5vmin;
-    /* Reduced for smaller screens */
+    width: 8vmin;
+    /* Increased size */
+    height: 3vmin;
+    /* Increased size */
     transform-origin: right;
     transform: translate(-100%, -80%) rotate(-20deg);
     background-color: #104d4e;
-    border-radius: 2vmin;
+    border-radius: 4vmin;
+    /* Increased size */
 }
 
 .flower-pp--3 .flower_l {
@@ -138,8 +144,8 @@ body {
 }
 
 .flower-pp--2 .flower_l {
-    height: 35vmin;
-    /* Reduced for smaller screens */
+    height: 70vmin;
+    /* Increased size */
 }
 
 .flower-pp--2 .f {
@@ -151,89 +157,94 @@ body {
 }
 
 .flower-pp--2 .leaf:not(:first-child) {
-    width: 3vmin;
-    /* Reduced for smaller screens */
-    height: 8vmin;
-    /* Reduced for smaller screens */
+    width: 6vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
     background-image: linear-gradient(to bottom, #ff43b6, #c22887, #1a233a 99%);
 }
 
 .flower-pp--3 .leaf:not(:first-child) {
-    width: 3vmin;
-    /* Reduced for smaller screens */
-    height: 8vmin;
-    /* Reduced for smaller screens */
+    width: 6vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
     background-image: linear-gradient(to bottom, #ad2be0, #712291, #1a233a 99%);
 }
 
 .flower-pp--3 .leaf--1 {
-    width: 6vmin;
-    /* Reduced for smaller screens */
-    height: 8vmin;
-    /* Reduced for smaller screens */
-    bottom: 2vmin;
+    width: 12vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
+    bottom: 4vmin;
+    /* Adjusted position */
     background-color: #d381f4;
 }
 
 .flower-pp--2 .leaf--1 {
-    width: 6vmin;
-    /* Reduced for smaller screens */
-    height: 8vmin;
-    /* Reduced for smaller screens */
-    bottom: 2vmin;
+    width: 12vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
+    bottom: 4vmin;
+    /* Adjusted position */
     background-color: #de118b;
 }
 
 .flower-pp--2 .f .leaf--8 {
-    width: 8vmin;
-    /* Reduced for smaller screens */
-    height: 7vmin;
-    /* Reduced for smaller screens */
-    bottom: 3vmin;
+    width: 16vmin;
+    /* Increased size */
+    height: 14vmin;
+    /* Increased size */
+    bottom: 6vmin;
+    /* Adjusted position */
     left: -30%;
     transform: rotate(-50deg);
     background-image: linear-gradient(to left bottom, #ff43b6, #4d1337);
 }
 
 .flower-pp--3 .f .leaf--8 {
-    width: 8vmin;
-    /* Reduced for smaller screens */
-    height: 7vmin;
-    /* Reduced for smaller screens */
+    width: 16vmin;
+    /* Increased size */
+    height: 14vmin;
+    /* Increased size */
     left: -10% !important;
     background-image: linear-gradient(to left bottom, #d582f6, #9455ad);
 }
 
 .flower_l {
-    width: 1.5vmin;
-    /* Reduced for smaller screens */
-    height: 40vmin;
-    /* Reduced for smaller screens */
+    width: 3vmin;
+    /* Increased size */
+    height: 80vmin;
+    /* Increased size */
     background-image: linear-gradient(to left top, #82fdff 20%, #142544, #104d4e);
-    border-radius: 3vmin;
-    /* Reduced for smaller screens */
+    border-radius: 6vmin;
+    /* Increased size */
 }
 
 .f {
     position: absolute;
-    top: 1vmin;
+    top: 2vmin;
+    /* Adjusted position */
     left: 50%;
     transform: translateX(-50%) rotate(-10deg);
-    width: 1.5vmin;
-    /* Reduced for smaller screens */
-    height: 1.5vmin;
-    /* Reduced for smaller screens */
+    width: 3vmin;
+    /* Increased size */
+    height: 3vmin;
+    /* Increased size */
 }
 
 .leaf {
     position: absolute;
     left: 50%;
-    bottom: 2vmin;
+    bottom: 4vmin;
+    /* Adjusted position */
     transform: translateX(-50%);
-    width: 4vmin;
-    /* Reduced for smaller screens */
-    height: 10vmin;
-    /* Reduced for smaller screens */
+    width: 8vmin;
+    /* Increased size */
+    height: 20vmin;
+    /* Increased size */
     background-image: linear-gradient(to bottom, #ffa085, #fa7373, #1a233a 99%);
     clip-path: ellipse(50% 50% at 50% 50%);
     transform-origin: center bottom;
@@ -241,11 +252,12 @@ body {
 }
 
 .leaf--1 {
-    width: 8vmin;
-    /* Reduced for smaller screens */
-    height: 10vmin;
-    /* Reduced for smaller screens */
-    bottom: 3vmin;
+    width: 16vmin;
+    /* Increased size */
+    height: 20vmin;
+    /* Increased size */
+    bottom: 6vmin;
+    /* Adjusted position */
     border-radius: 50% 50% 50% 50% / 80% 80% 20% 20%;
     background-color: #e24f5f;
     background-image: none;
@@ -277,15 +289,17 @@ body {
 }
 
 .leaf--8 {
-    width: 10vmin;
-    /* Reduced for smaller screens */
-    height: 9vmin;
-    /* Reduced for smaller screens */
-    bottom: 6vmin;
+    width: 20vmin;
+    /* Increased size */
+    height: 18vmin;
+    /* Increased size */
+    bottom: 12vmin;
+    /* Adjusted position */
     left: -30%;
     border-radius: none;
     clip-path: none;
-    border-radius: 10vmin 2vmin 10vmin 2vmin;
+    border-radius: 20vmin 4vmin 20vmin 4vmin;
+    /* Increased size */
     transform: rotate(-55deg);
     background-image: linear-gradient(to left bottom, #ffa085, #eb8b8b, #492f2f 98%);
 }
@@ -323,128 +337,135 @@ body {
 }
 
 .flower__fall-down--purple {
-    bottom: 4vmin;
+    bottom: 8vmin;
+    /* Adjusted position */
     animation: flower-fall-down-purple 6s 1.2s linear forwards, flower-falling 6s 7.2s linear infinite;
 }
 
 .flower-pp--4 {
     left: 60%;
-    bottom: 10%;
+    bottom: 20%;
+    /* Adjusted position */
     transform-origin: 10% left;
     transform: rotate(15deg);
 }
 
 .flower-pp--5 {
     left: 20%;
-    bottom: 8%;
+    bottom: 16%;
+    /* Adjusted position */
     transform-origin: 10% left;
     transform: rotate(-15deg);
 }
 
 .flower-pp--4 .flower_l {
-    height: 30vmin;
-    /* Adjusted height */
+    height: 60vmin;
+    /* Increased size */
     background-image: linear-gradient(to top, #142544, #1a9092);
 }
 
 .flower-pp--5 .flower_l {
-    height: 28vmin;
-    /* Adjusted height */
+    height: 56vmin;
+    /* Increased size */
     background-image: linear-gradient(to top, #142544, #1b6d6e);
 }
 
 .flower-pp--4 .leaf:not(:first-child) {
-    width: 3vmin;
-    height: 8vmin;
+    width: 6vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
     background-image: linear-gradient(to bottom, #ff43b6, #c22887, #1a233a 99%);
 }
 
 .flower-pp--5 .leaf:not(:first-child) {
-    width: 3vmin;
-    height: 8vmin;
+    width: 6vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
     background-image: linear-gradient(to bottom, #ad2be0, #712291, #1a233a 99%);
 }
 
 .flower-pp--4 .leaf--1 {
-    width: 6vmin;
-    height: 8vmin;
-    bottom: 2vmin;
+    width: 12vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
+    bottom: 4vmin;
+    /* Adjusted position */
     background-color: #de118b;
 }
 
 .flower-pp--5 .leaf--1 {
-    width: 6vmin;
-    height: 8vmin;
-    bottom: 2vmin;
+    width: 12vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
+    bottom: 4vmin;
+    /* Adjusted position */
     background-color: #9a63b0;
 }
 
 .flower-pp--4 .f .leaf--8 {
-    width: 8vmin;
-    height: 7vmin;
-    bottom: 3vmin;
+    width: 16vmin;
+    /* Increased size */
+    height: 14vmin;
+    /* Increased size */
+    bottom: 6vmin;
+    /* Adjusted position */
     left: -30%;
     transform: rotate(-50deg);
     background-image: linear-gradient(to left bottom, #ff43b6, #4d1337);
 }
 
 .flower-pp--5 .f .leaf--8 {
-    width: 8vmin;
-    height: 7vmin;
+    width: 16vmin;
+    /* Increased size */
+    height: 14vmin;
+    /* Increased size */
     left: -10% !important;
     background-image: linear-gradient(to left bottom, #c08cd4, #9455ad);
 }
 
-
-/* Additional animations for new flowers */
-
-.flower-pp--4 .flower__fall-down--pink {
-    animation: flower-fall-down-pink 5s 1.2s linear forwards;
-}
-
-.flower-pp--5 .flower__fall-down--purple {
-    bottom: 4vmin;
-    animation: flower-fall-down-purple 6s 1.2s linear forwards, flower-falling 6s 7.2s linear infinite;
-}
-
 .flower-pp--6 {
     left: 35%;
-    /* Adjust position as needed */
-    bottom: 20%;
-    /* Positioned above the purple flower */
+    bottom: 40%;
+    /* Adjusted position */
     transform-origin: 10% left;
     transform: rotate(-5deg);
-    /* Slight rotation for a natural look */
 }
 
 .flower-pp--6 .flower_l {
-    height: 30vmin;
-    /* Adjusted height */
+    height: 60vmin;
+    /* Increased size */
     background-image: linear-gradient(to top, #142544, #1a9092);
-    /* Gradient for the stem */
 }
 
 .flower-pp--6 .leaf:not(:first-child) {
-    width: 3vmin;
-    height: 8vmin;
+    width: 6vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
     background-image: linear-gradient(to bottom, #e6e6fa, #d8bfd8, #9370db 99%);
-    /* Lavender gradient for leaves */
 }
 
 .flower-pp--6 .leaf--1 {
-    width: 6vmin;
-    height: 8vmin;
-    bottom: 2vmin;
+    width: 12vmin;
+    /* Increased size */
+    height: 16vmin;
+    /* Increased size */
+    bottom: 4vmin;
+    /* Adjusted position */
     background-color: #e6e6fa;
-    /* Light lavender for the center */
 }
 
 .flower-pp--6 .f .leaf--8 {
-    width: 8vmin;
-    height: 7vmin;
+    width: 16vmin;
+    /* Increased size */
+    height: 14vmin;
+    /* Increased size */
     left: -10% !important;
     background-image: linear-gradient(to left bottom, #e6e6fa, #9370db);
-    /* Lavender gradient for the larger leaf */
 }
 
 @keyframes open-flower {
@@ -468,7 +489,8 @@ body {
         transform: rotateX(-100deg);
     }
     100% {
-        transform: translate(2vmin, 28vmin);
+        transform: translate(4vmin, 56vmin);
+        /* Adjusted position */
     }
 }
 
@@ -477,11 +499,13 @@ body {
         transform: rotate(-55deg);
     }
     50% {
-        bottom: 3vmin;
+        bottom: 6vmin;
+        /* Adjusted position */
         transform: rotateX(-100deg);
     }
     100% {
-        transform: translate(2vmin, 70vmin) rotate(150deg);
+        transform: translate(4vmin, 140vmin) rotate(150deg);
+        /* Adjusted position */
     }
 }
 
@@ -490,21 +514,25 @@ body {
         transform: rotate(-50deg);
     }
     25% {
-        bottom: 1vmin;
+        bottom: 2vmin;
+        /* Adjusted position */
         transform: rotateX(-100deg);
         perspective: 0px;
     }
     50% {
         perspective: 0px;
-        transform: translate(-30vmin, 2vmin) rotate(90deg);
+        transform: translate(-60vmin, 4vmin) rotate(90deg);
+        /* Adjusted position */
     }
     75% {
         perspective: 0px;
-        transform: translate(-34vmin, -2vmin);
+        transform: translate(-68vmin, -4vmin);
+        /* Adjusted position */
     }
     100% {
         transform-origin: center;
-        transform: translate(-34vmin, -2vmin) rotateY(-80deg) rotateX(35deg);
+        transform: translate(-68vmin, -4vmin) rotateY(-80deg) rotateX(35deg);
+        /* Adjusted position */
     }
 }
 
@@ -512,18 +540,22 @@ body {
     0%,
     100% {
         transform-origin: center;
-        transform: translate(-34vmin, -2vmin) rotateY(-80deg) rotateX(35deg);
+        transform: translate(-68vmin, -4vmin) rotateY(-80deg) rotateX(35deg);
+        /* Adjusted position */
     }
     25% {
         transform-origin: center;
-        transform: translate(-34.4vmin, -2vmin) rotateY(-84deg) rotateX(35deg);
+        transform: translate(-68.8vmin, -4vmin) rotateY(-84deg) rotateX(35deg);
+        /* Adjusted position */
     }
     50% {
         transform-origin: center;
-        transform: translate(-32vmin, -4.2vmin) rotateY(-80deg) rotateX(35deg);
+        transform: translate(-64vmin, -8.4vmin) rotateY(-80deg) rotateX(35deg);
+        /* Adjusted position */
     }
     75% {
         transform-origin: center;
-        transform: translate(-36vmin, 1.1vmin) rotateY(-80deg) rotateX(35deg);
+        transform: translate(-72vmin, 2.2vmin) rotateY(-80deg) rotateX(35deg);
+        /* Adjusted position */
     }
 }
